@@ -1,0 +1,289 @@
+body {
+    font-family: 'Noto Serif TC', serif; /* 字体 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e0e0e0; /* 背景颜色 */
+    box-sizing: border-box;
+    background-image: url('background.jpg');
+    background-size: cover; /* 背景图片覆盖整个屏幕 */    
+    background-position: center; /* 圖片居中 */
+    background-repeat: no-repeat; /* 圖片不重複 */
+}
+
+header {
+    font-family: 'Noto Serif TC', serif; /* 标题字体 */
+    background-color: #070bf05b; /* 背景颜色 */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    position: relative;
+    height: 120px;
+}
+
+.header-left {
+    position: absolute;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header-center {
+    text-align: center;
+}
+
+.logo {
+    width: 150px; 
+    height: 120px;
+}
+
+header h1 {
+    font-family: 'Noto Serif TC', serif;
+    color: white;
+    margin: 0;
+    font-size: 2.5em; /* 标题大小 */
+}
+
+nav {
+    width: 200px;
+    background-color: #333333; /* 背景颜色 */
+    color: white;
+    margin-top: 90px;
+    border: 1px solid #ccc; /* 边框颜色 */
+    height: 215px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; /* 主选项上下内边距 */
+    margin: 0; /* 主选项上下外边距 */
+}
+
+nav ul li {
+    position: relative;
+    display: block;
+    margin-bottom: 5px; /* 主选项之间的间距 */
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #333; /* 背景颜色 */
+}
+
+nav ul li:hover > a {
+    background-color: #575757; /* 悬停效果 */
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #3d3d3d; /* 背景颜色 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc; /* 边框颜色 */
+    white-space: nowrap;
+    min-width: 150px; /* 最小宽度 */
+}
+
+.submenu li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu li a {
+    font-size: 14px; /* 字体大小 */
+    padding: 5px 20px; /* 内边距 */
+    background-color: #333; /* 背景颜色 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px; /* 高度 */
+    margin: 0;
+    border-bottom: 1px solid #444; /* 边框颜色 */
+}
+
+.submenu li a:last-child {
+    border-bottom: none;
+}
+
+.submenu li a:hover {
+    background-color: #575757; /* 悬停效果 */
+}
+
+.main-content {
+    padding: 20px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.custom-container {
+    background-color: #f6f6f7c7; /* 背景颜色 */
+    border: 1px solid #ccc; /* 边框颜色 */
+    padding: 20px; /* 内边距 */
+    margin: 0 auto; /* 居中 */
+    max-width: 1000px; /* 最大宽度 */
+    text-align: center; /* 文本居中 */
+    position: relative;
+    margin-top: -250px; /* 调整位置，确保和.nav高度一致 */
+    height: 600px;
+}
+
+
+.custom-container img {
+    max-width: 100%; /* 图片最大宽度 */
+    height: auto; /* 自动高度 */
+}
+
+.custom-container h2 {
+    font-family: 'Noto Serif TC', serif; /* 使用主體字型 */
+    font-size: 2em; /* 調整小標題字體大小 */
+    color: #030303; /* 調整小標題字體顏色 */
+    margin-top: 0;
+}
+
+/* 自訂容器中的連結樣式 */
+.custom-container .page-links {
+    display: flex; /* 使用 flexbox 來排列連結 */
+    justify-content: space-around; /* 平均分配空間 */
+    margin: 30px; /* 調整連結之間的間距 */
+    padding: 50px; /* 調整連結的內邊距 */
+    margin-top: -30px; /* 調整連結頂部間距 */
+}
+
+.custom-container .page-links a {
+    color: #070707; /* 調整連結顏色 */
+    text-decoration: none; /* 移除連結的底線 */
+    font-size: 25px; /* 調整連結字體大小 */
+}
+
+.page-links {
+    font-size: 25px;
+}
+.custom-container .page-links a:hover {
+    text-decoration: underline; /* 當滑鼠懸停時顯示底線 */
+}
+
+.custom-container .article-content {
+    font-family: 'Noto Serif TC', serif; /* 使用主體字型 */
+    font-size: 1.1em; /* 調整文章字體大小 */
+    line-height: 1.5; /* 調整行間距 */
+    color: #000000; /* 調整字體顏色 */
+    margin-top: 20px; /* 調整文章頂部間距 */
+}
+
+.custom-container .article-content p {
+    margin-bottom: 15px; /* 調整段落間距 */
+}
+
+.thumbnails img {
+    width: 160px; /* 缩略图的宽度 */
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
+}
+
+.thumbnails2 img {
+    width: 200px; /* 缩略图的宽度 */
+    height: auto;
+    margin: -55px 110px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnails2 img:hover {
+    transform: scale(1.1);
+}
+.thumbnails3 img {
+    width: 250px; /* 缩略图的宽度 */
+    height: auto;
+    margin: 30px 110px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnails3 img:hover {
+    transform: scale(1.1);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 700px;
+}
+
+.close, .prev, .next {
+    position: absolute;
+    top: 50%;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.close {
+    top: 15px;
+    right: 35px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover, .close:hover {
+    color: #bbb;
+}
+
+footer {
+    background-color: #333; /* 背景颜色 */
+    color: #fff; /* 文字颜色 */
+    text-align: center; /* 文本对齐 */
+    padding: 20px; /* 内边距 */
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+}

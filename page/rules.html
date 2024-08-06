@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <title>臺灣韌體學會 - 學會章程</title>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="TFA logo.jpg" alt="公司標誌" class="logo">
+        </div>
+        <div class="header-center">
+            <h1>臺灣韌體學會</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="about.html">關於學會</a></li>
+            <li>
+                <a href="about.html">學會事項</a>
+                <ul class="submenu">
+                    <li><a href="news.html">最新事項</a></li>
+                    <li><a href="members.html">學會成員</a></li>
+                    <li><a href="rules.html">學會章程</a></li>
+                    <li><a href="rules2.html">院/會士遴選辦法</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="about.html">學會活動</a>
+                <ul class="submenu">
+                    <li><a href="meeting.html">會議</a></li>
+                    <li><a href="seminar.html">研討會</a></li>
+                    <li><a href="publication.html">期刊</a></li>
+                </ul>
+            </li>
+            <li><a href="join.html">加入我們</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="custom-container">
+            <h2>學會章程</h2>
+                <div class="thumbnails">
+                    <img src="rules1.jpg" alt="Image 1" onclick="showImage(0)">
+                    <img src="rules2.jpg" alt="Image 2" onclick="showImage(0)">
+                    <img src="rules3.jpg" alt="Image 3" onclick="showImage(0)">
+                    <img src="rules4.jpg" alt="Image 4" onclick="showImage(0)">
+                    <img src="rules5.jpg" alt="Image 5" onclick="showImage(0)">
+                    <img src="rules6.jpg" alt="Image 6" onclick="showImage(0)">
+                    <img src="rules7.jpg" alt="Image 7" onclick="showImage(0)">
+                    
+                </div>
+                <div id="modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+                    <span class="next" onclick="changeImage(1)">&#10095;</span>
+                    <img class="modal-content" id="fullImage">
+                </div>
+            
+                <script src="script.js"></script>
+        </div>
+    </main>
+    <footer>
+        <p>聯絡資訊: example@example.com | 電話:(05)272-0411#23360</p>
+    </footer>
+</body>
+</html>
